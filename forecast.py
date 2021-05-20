@@ -37,7 +37,7 @@ scaler = MinMaxScaler(feature_range=(0, 1))
 OHLC_avg = scaler.fit_transform(OHLC_avg)
 
 # TRAIN-TEST SPLIT
-train_OHLC = int(len(OHLC_avg) * 0.8) #Deciding the Train Test Split. We Use 80% of the data for training here.
+train_OHLC = int(len(OHLC_avg) * 0.75) #Deciding the Train Test Split. We Use 75% of the data for training here.
 test_OHLC = len(OHLC_avg) - train_OHLC
 train_OHLC, test_OHLC = OHLC_avg[0:train_OHLC,:], OHLC_avg[train_OHLC:len(OHLC_avg),:]
 
