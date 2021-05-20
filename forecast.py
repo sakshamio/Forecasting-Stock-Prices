@@ -29,7 +29,7 @@ plt.plot(indn, OHLC_avg, 'r', label = 'OHLC Average')
 plt.plot(indn, HLC_avg, 'b', label = 'HLC Average')
 plt.plot(indn, close_val, 'g', label = 'Closing price')
 plt.legend(loc = 'upper right')
-plt.show()
+plt.show()xkckc
 
 # PREPARATION OF TIME SERIES DATASE
 OHLC_avg = np.reshape(OHLC_avg.values, (len(OHLC_avg),1)) 
